@@ -6,12 +6,12 @@ public class Sistema {
 
         double media = calcularMedia(primeiraNota, segundaNota);
         String situacao = verificaSituacaoAluno(media);
-        
+
         mostrarResultado(nomeAluno, media, situacao);
     }
 
-    public static double calcularMedia(double nota1, double nota2) {
-        return (nota1 + nota2) / 2;
+    public static double calcularMedia(double primeiraNota, double segundaNota) {
+        return (primeiraNota + segundaNota) / 2;
     }
 
     public static String verificaSituacaoAluno(double media) {
